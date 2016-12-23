@@ -1,0 +1,28 @@
+<resources>
+    <!--Messages-->
+        <string name="error_log_in">Erro ao se conectar</string>
+        <string name="log_in_successfull">Conectado com sucesso !</string>
+        <string name="log_in_unsuccessfull">Usuário e/ou senha inválidos !</string>
+        <string name="msg_blank_login">Informe usuário e senha para login</string>
+    <!--Strings-->
+        <string name="facebook">Login com Facebook</string>
+        <string name="facebook_signup">Entrar com Facebook</string>
+        <string name="app_name">Seu pedido</string>
+        <string name="e_mail">E-mail</string>
+        <string name="name">Nome</string>
+        <string name="surname">Sobrenome</string>
+        <string name="password">Senha</string>
+        <string name="password_confirmation">Redigite a senha</string>
+        <string name="btnLogin">Entrar</string>
+        <string name="btnSignup">Cadastre-se</string>
+        <string name="signup_btnLogin">Voltar</string>
+        <string name="signup_btnSignup">Cadastrar</string>
+        <string name="forgotPassord">Esqueci minha senha</string>
+        <string name="logOut">Sair</string>
+
+        <string name="signin_title">Login</string>
+        <string name="signup_title">Cadastro</string>
+        <string name="title_activity_main2">Main2Activity</string>
+        <string name="hello_round">Hello Round World!</string>
+        <string name="hello_square">Hello Square World!</string>
+</resources>
