@@ -76,7 +76,8 @@
             android:layout_marginStart="16dp"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"
-            android:layout_marginBottom="16dp" />
+            android:layout_marginBottom="16dp"
+            android:id="@+id/btnForgotpass"/>
         <Button
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -90,7 +91,7 @@
             android:layout_marginTop="40dp"
             app:layout_constraintTop_toBottomOf="@+id/userpassLogin"
             android:textColor="#FFF"
-            android:text="@string/btnLogin"
+            android:text="@string/signin_btnLogin"
             fontPath="fonts/Roboto-Bold.ttf"
             app:layout_constraintHorizontal_bias="1.0"
             tools:ignore="MissingPrefix"
@@ -99,7 +100,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:layout_constraintTop_toBottomOf="@+id/loginButton"
-            android:text="@string/btnSignup"
+            android:text="@string/signin_btnSignup"
             android:textColor="@color/accent"
             android:layout_marginTop="24dp"
             android:layout_marginEnd="16dp"
@@ -110,22 +111,22 @@
             android:id="@+id/signupButton"
             android:onClick="signupActivity"
             tools:ignore="MissingPrefix" />
-        <Button
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:background="@drawable/facebook_button"
-            android:text="@string/facebook"
-            android:textColor="@color/white_hint"
-            fontPath="fonts/Roboto-Bold.ttf"
-            android:layout_marginTop="24dp"
-            app:layout_constraintTop_toBottomOf="@+id/signupButton"
-            android:layout_marginEnd="16dp"
-            app:layout_constraintRight_toRightOf="parent"
-            android:layout_marginStart="16dp"
-            app:layout_constraintLeft_toLeftOf="parent"
-            android:id="@+id/facebookButton"
-            android:clickable="true"
-            tools:ignore="MissingPrefix" />
+        <!--<Button-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:background="@drawable/facebook_button"-->
+            <!--android:text="@string/facebook"-->
+            <!--android:textColor="@color/white_hint"-->
+            <!--fontPath="fonts/Roboto-Bold.ttf"-->
+            <!--android:layout_marginTop="24dp"-->
+            <!--app:layout_constraintTop_toBottomOf="@+id/signupButton"-->
+            <!--android:layout_marginEnd="16dp"-->
+            <!--app:layout_constraintRight_toRightOf="parent"-->
+            <!--android:layout_marginStart="16dp"-->
+            <!--app:layout_constraintLeft_toLeftOf="parent"-->
+            <!--android:id="@+id/facebookButton"-->
+            <!--android:clickable="true"-->
+            <!--tools:ignore="MissingPrefix" />-->
 
 
     </android.support.constraint.ConstraintLayout>
