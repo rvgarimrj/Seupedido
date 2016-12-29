@@ -119,9 +119,17 @@ public class Signin extends AppCompatActivity implements View.OnClickListener , 
                                 }
                                 else {
 
-                                    Toast.makeText(getApplicationContext(),getString(R.string.log_in_unsuccessfull), Toast.LENGTH_LONG).show();
-                                    Log.i(MSG,"Not logged in");
-                                    e.printStackTrace();
+                                    switch (e.getCode()) {
+                                        case ParseException.CONNECTION_FAILED: {
+                                            Toast.makeText(getApplicationContext(),getString(R.string.connection_problems),Toast.LENGTH_LONG).show();
+                                            break;
+                                        }
+                                        default: {
+                                            // Something else went wrong
+                                            Toast.makeText(getApplicationContext(),getString(R.string.log_in_unsuccessfull),Toast.LENGTH_LONG).show();
+                                            e.printStackTrace();
+                                        }
+                                    }
 
                                 }
                             }

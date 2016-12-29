@@ -123,8 +123,13 @@ public class Signup extends AppCompatActivity implements View.OnKeyListener{
                                                 Toast.makeText(getApplicationContext(),getString(R.string.email_already_taken),Toast.LENGTH_LONG).show();
                                                 break;
                                             }
-                                            case ParseException.EMAIL_TAKEN: {
+                                            case ParseException.INVALID_EMAIL_ADDRESS: {
                                                 // report error
+                                                Toast.makeText(getApplicationContext(),getString(R.string.email_not_valid),Toast.LENGTH_LONG).show();
+                                                break;
+                                            }
+                                            case ParseException.CONNECTION_FAILED: {
+                                                Toast.makeText(getApplicationContext(),getString(R.string.connection_problems),Toast.LENGTH_LONG).show();
                                                 break;
                                             }
                                             default: {
@@ -133,7 +138,6 @@ public class Signup extends AppCompatActivity implements View.OnKeyListener{
                                                 e.printStackTrace();
                                             }
                                         }
-
                                     }
                                 }
 
@@ -162,7 +166,7 @@ public class Signup extends AppCompatActivity implements View.OnKeyListener{
         userName = (EditText)findViewById(R.id.signup_userName);
         userSurname = (EditText)findViewById(R.id.signup_userSurname);
 
-        userPassSignup.setOnKeyListener(this);
+        userPassConfirmationSignup.setOnKeyListener(this);
 
     }
 

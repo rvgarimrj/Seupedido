@@ -6,6 +6,9 @@
     <string name="sign_up_successfull">Cadastrado com sucesso !</string>
     <string name="sign_up_unsuccessfull">Erro ao cadastrar. Você está conectado à internet ?</string>
     <string name="email_already_taken">E-mail já cadastrado.</string>
+    <string name="email_not_valid">Informe um e-mail válido</string>
+    <string name="email_not_found">E-mail não cadastrado.</string>
+    <string name="connection_problems">Problemas de conexão. Verifique sua conexão com a Internet e tente novamente.</string>
     <string name="msg_blank_login">Informe usuário e senha para login</string>
     <string name="login_dialog_title">Aguarde</string>
     <string name="login_dialog_msg">Realizando login...</string>
