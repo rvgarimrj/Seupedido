@@ -52,8 +52,6 @@ public class Signin extends AppCompatActivity implements View.OnClickListener , 
         if (i == KeyEvent.KEYCODE_ENTER && keyEvent.getAction() == keyEvent.ACTION_DOWN) {
 
             login(view);
-
-
         }
 
         return false;
