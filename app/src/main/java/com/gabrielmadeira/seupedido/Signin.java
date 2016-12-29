@@ -5,12 +5,15 @@ import android.content.Context;
 import android.content.Intent;
 import android.os.AsyncTask;
 import android.os.SystemClock;
+import android.support.constraint.ConstraintLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.KeyEvent;
 import android.view.View;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.ProgressBar;
 import android.widget.Toast;
 
@@ -21,7 +24,7 @@ import com.parse.ParseUser;
 import uk.co.chrisjenx.calligraphy.CalligraphyConfig;
 import uk.co.chrisjenx.calligraphy.CalligraphyContextWrapper;
 
-public class Signin extends AppCompatActivity {
+public class Signin extends AppCompatActivity implements View.OnClickListener , View.OnKeyListener{
 
     String MSG = "AppInfo";
     String mEmail;
@@ -29,9 +32,33 @@ public class Signin extends AppCompatActivity {
     EditText userEmail;
     EditText userPass;
     private ProgressDialog dialog;
+    ImageView logo;
+    ConstraintLayout constraintLayout;
+
+    @Override
+    public void onClick(View view) {
+        if ((view.getId() == R.id.logo) || (view.getId() == R.id.constraint_layout)){
+            closeKeyboard(true);
+        }
+
+    }
 
     // ***********************************************************************************************************************************************************************
-    // Hide keyboard after inputing pass and email to show progressbar
+    // Hide keyboard after inputing pass and email to show progressbar. ENTER KEY = Sigin
+
+    @Override
+    public boolean onKey(View view, int i, KeyEvent keyEvent) {
+
+        if (i == KeyEvent.KEYCODE_ENTER && keyEvent.getAction() == keyEvent.ACTION_DOWN) {
+
+            login(view);
+
+        }
+
+        return false;
+    }
+
+
 
 
     private void closeKeyboard(boolean b) {
@@ -92,6 +119,7 @@ public class Signin extends AppCompatActivity {
                                     Log.i(MSG,"Logged in");
                                 }
                                 else {
+
                                     Toast.makeText(getApplicationContext(),getString(R.string.log_in_unsuccessfull), Toast.LENGTH_LONG).show();
                                     Log.i(MSG,"Not logged in");
                                     e.printStackTrace();
@@ -133,6 +161,12 @@ public class Signin extends AppCompatActivity {
 
         userEmail = (EditText) findViewById(R.id.useremailLogin);
         userPass = (EditText) findViewById(R.id.userpassLogin);
+        //userEmail.setOnKeyListener(this);
+        userPass.setOnKeyListener(this);
+        logo = (ImageView) findViewById(R.id.logo);
+        constraintLayout = (ConstraintLayout)findViewById(R.id.constraint_layout);
+        logo.setOnClickListener(this);
+        constraintLayout.setOnKeyListener(this);
 
 
     }
@@ -140,6 +174,7 @@ public class Signin extends AppCompatActivity {
     protected void attachBaseContext(Context newBase) {
         super.attachBaseContext(CalligraphyContextWrapper.wrap(newBase));
     }
+
 
 }
 

@@ -24,7 +24,7 @@
             app:layout_constraintRight_toRightOf="parent"
             android:layout_marginTop="24dp"
             app:layout_constraintTop_toTopOf="parent"
-            android:id="@+id/imageView2"
+            android:id="@+id/logo"
             tools:ignore="ContentDescription" />
 
         <EditText
@@ -43,7 +43,7 @@
             app:layout_constraintRight_toRightOf="parent"
             fontPath="fonts/Roboto-Regular.ttf"
             android:layout_marginTop="8dp"
-            app:layout_constraintTop_toBottomOf="@+id/imageView2"
+            app:layout_constraintTop_toBottomOf="@+id/logo"
             android:drawableStart="@drawable/ic_email_black_24dp"
             android:drawablePadding="10dp"
             tools:ignore="MissingPrefix" />
@@ -54,7 +54,8 @@
             android:inputType="textPassword"
             android:hint="@string/password"
             android:textColor="@color/white_hint"
-            android:textColorHint="#FFF"
+            android:textColorHint="@color/white_hint"
+            android:backgroundTint="@color/white_hint"
             android:layout_marginEnd="16dp"
             app:layout_constraintRight_toRightOf="parent"
             android:layout_marginStart="16dp"

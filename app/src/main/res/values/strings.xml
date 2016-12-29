@@ -3,9 +3,16 @@
     <string name="error_log_in">Erro ao se conectar</string>
     <string name="log_in_successfull">Conectado com sucesso !</string>
     <string name="log_in_unsuccessfull">Usuário e/ou senha inválidos !</string>
+    <string name="sign_up_successfull">Cadastrado com sucesso !</string>
+    <string name="sign_up_unsuccessfull">Erro ao cadastrar. Você está conectado à internet ?</string>
+    <string name="email_already_taken">E-mail já cadastrado.</string>
     <string name="msg_blank_login">Informe usuário e senha para login</string>
     <string name="login_dialog_title">Aguarde</string>
     <string name="login_dialog_msg">Realizando login...</string>
+    <string name="signup_dialog_title">Aguarde</string>
+    <string name="signup_dialog_msg">Cadastrando você em nosso sitema...</string>
+    <string name="signup_fields_empty">Ops.. Os campos precisam ser preenchidos</string>
+    <string name="password_mismatch">Senha e confirmação de senha devem ser iguais</string>
     <!--Strings-->
     <string name="facebook">Login com Facebook</string>
     <string name="facebook_signup">Entrar com Facebook</string>
@@ -24,8 +31,5 @@
 
     <string name="signin_title">Login</string>
     <string name="signup_title">Cadastro</string>
-    <string name="title_activity_main2">Main2Activity</string>
-    <string name="hello_round">Hello Round World!</string>
-    <string name="hello_square">Hello Square World!</string>
     <string name="title_activity_splash">SplashActivity</string>
 </resources>
