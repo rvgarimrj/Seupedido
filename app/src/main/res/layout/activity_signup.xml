@@ -26,7 +26,8 @@
             android:layout_marginEnd="16dp"
             app:layout_constraintRight_toRightOf="parent"
             android:layout_marginStart="16dp"
-            app:layout_constraintLeft_toLeftOf="parent" />
+            app:layout_constraintLeft_toLeftOf="parent"
+            tools:ignore="ContentDescription" />
         <EditText
             android:layout_width="159dp"
             android:layout_height="40dp"
@@ -98,7 +99,7 @@
             android:layout_marginStart="16dp"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/signup_userEmail"
-            andfontPath="fonts/Roboto-Regular.ttf"
+            fontPath="fonts/Roboto-Regular.ttf"
             android:id="@+id/signup_userPassword"
             android:drawableStart="@drawable/ic_vpn_key_black_24dp"
             android:drawablePadding="10dp"
@@ -118,7 +119,7 @@
             android:layout_marginStart="16dp"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/signup_userPassword"
-            andfontPath="fonts/Roboto-Regular.ttf"
+            fontPath="fonts/Roboto-Regular.ttf"
             android:id="@+id/signup_userPasswordconfirmation"
             android:drawableStart="@drawable/ic_vpn_key_black_24dp"
             android:drawablePadding="10dp"

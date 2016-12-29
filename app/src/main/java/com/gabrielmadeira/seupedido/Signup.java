@@ -33,6 +33,9 @@ public class Signup extends AppCompatActivity implements View.OnKeyListener{
     private ProgressDialog dialog;
     ParseUser user;
 
+    // ***********************************************************************************************************************************************************************
+    // Hide keyboard after inputing pass and email to show progressbar. ENTER KEY = Signup after pass confirmation
+
     @Override
     public boolean onKey(View view, int i, KeyEvent keyEvent) {
 
@@ -42,8 +45,7 @@ public class Signup extends AppCompatActivity implements View.OnKeyListener{
         return false;
     }
 
-    // ***********************************************************************************************************************************************************************
-    // Hide keyboard after inputing pass and email to show progressbar. ENTER KEY = Signup after pass confirmation
+
 
 
     private void closeKeyboard(boolean b) {

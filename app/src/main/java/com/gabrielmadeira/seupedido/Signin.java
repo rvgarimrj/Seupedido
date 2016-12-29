@@ -44,7 +44,7 @@ public class Signin extends AppCompatActivity implements View.OnClickListener , 
     }
 
     // ***********************************************************************************************************************************************************************
-    // Hide keyboard after inputing pass and email to show progressbar. ENTER KEY = Sigin
+    // Hide keyboard after inputing pass and email to show progressbar. ENTER KEY = Sigin after password
 
     @Override
     public boolean onKey(View view, int i, KeyEvent keyEvent) {
@@ -130,7 +130,7 @@ public class Signin extends AppCompatActivity implements View.OnClickListener , 
                         });
                         SystemClock.sleep(600);
                         dialog.dismiss();
-                    }catch (Exception e) {
+                    }catch (Exception ignored) {
 
                     }
                 }
